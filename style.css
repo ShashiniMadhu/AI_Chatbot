@@ -1,3 +1,4 @@
+/* Importing Google Fonts - Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
@@ -31,7 +32,7 @@ body{
     justify-content: space-between;
 }
 
-.chat-header .chatbot-info{
+.chatbot-header .header-info{
     display: flex;
     gap: 10px;
     align-items: center;
@@ -51,4 +52,78 @@ body{
     color: #fff;
     font-size: 1.31rem;
     font-weight: 600;
+}
+
+.chatbot-header #close-chatbot {
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    font-size: 1.9rem;
+    margin-right: -10px;
+    padding-top: 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    transition: 0.2s ease;
+}
+
+.chatbot-header #close-chatbot:hover{
+    background: #3d39ac;
+}
+
+.chat-body{
+    padding: 25px 22px;
+    display: flex;
+    gap: 20px;
+    height: 460px;
+    margin-bottom: 82px;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+.chat-body .message{
+    display: flex;
+    gap:11px;
+    align-items: center;
+}
+
+.chat-body .bot-message .bot-avatar{
+    height: 35px;
+    width: 35px;
+    padding: 6px;
+    fill: #fff;
+    flex-shrink: 0;
+    margin-bottom: 2px;
+    align-self: flex-end;
+    background: #5350c4;
+    border-radius: 50%;
+}
+
+.chat-body .message .message-text{
+    padding: 12px 16px;
+    max-width: 75%;
+    font-size: 0.95rem;
+    background: #f2f2ff;
+}
+
+.chat-body .message .message-text{
+    padding: 12px 16px;
+    max-width : 75%;
+    font-size: 0.95rem;
+    background: #f2f2ff;
+}
+
+.chat-body .bot-message .message-text{
+    background:#f2f2ff;
+    border-radius: 13px 13px 13px 13px;
+}
+
+.chat-body .user-message .message-text{
+    background:#f2f2ff;
+    border-radius: 13px 13px 13px 13px;
+}
+
+.chat-footer{
+    position: absolute;
 }
