@@ -31,22 +31,26 @@
                 </svg>
                 <div class="message-text">Hey there 👋<br/>How can I help you today?</div>
             </div>
-            <div class="message user-message">
-                <div class="message-text">I need you to give some prompts</div>
-            </div>
         </div>
 
         <!--Chatbot Footer-->
-        <div class="chatbot-footer">
+        <div class="chat-footer">
             <form action="#" class="chat-form">
-                <textarea placeholder="Message.." class="message input"></textarea>
+                <textarea placeholder="Message.." class="message-input" required></textarea>
                 <div class="chat-controls">
                     <button type="button" class="material-symbols-rounded">sentiment_satisfied</button>
-                    <button type="button" class="material-symbols-rounded">attach_file</button>
-                    <button type="submit" class="material-symbols-rounded">arrow_upward</button>
+                    <div class="file-upload-wrapper">
+                        <input type="file" accept="images/*" id="file-input" hidden>
+                        <img src="#">
+                        <button type="button" class="material-symbols-rounded" id ="file-upload">attach_file</button>
+                        <button type="button" class="material-symbols-rounded" id ="file-cancel">close</button>
+                    </div>
+                    <button type="submit" class="material-symbols-rounded" id="send-message">arrow_upward</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
