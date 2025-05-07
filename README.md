@@ -27,12 +27,12 @@ Digital Sage is a modern, feature-rich AI chatbot powered by Google's Gemini API
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/digital-sage.git
+   git clone https://github.com/ShashiniMadhu/AI_Chatbot.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd digital-sage
+   cd AI_Chatbot
    ```
 
 3. Open `script.js` and replace the API key with your own:
